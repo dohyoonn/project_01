@@ -1,0 +1,14 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Temporary processing files
+images_grid.jpg
+new_grid.jpg
+create_grid.py
+create_grid_new.py
+
+# Local agent config/caches (if any)
+.gemini/
+.agents/
+*.log

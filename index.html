@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Recipe to Resource | Culinary Systems & Environmental Engineering Portfolio</title>
+  
+  <!-- SEO Best Practices -->
+  <meta name="description" content="A passion project portfolio bridging culinary science and systems engineering. Exploring how raw ingredients map onto global supply chains and environmental resources.">
+  <meta name="keywords" content="Culinary Science, Systems Engineering, Environmental Science, Portfolio, Food Sustainability, Supply Chain, Admissions Portfolio">
+  
+  <!-- Modern Typography (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome vector icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=3.3">
+</head>
+<body>
+
+  <!-- =======================================================================
+       HEADER / GLASS NAVIGATION
+       ======================================================================= -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" id="logo-home">
+        <i class="fa-solid fa-wheat-awn"></i>
+        <span id="header-brand-title">From Recipe to Resource</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link active" data-tab="home">Home & Story</a></li>
+          <li><a href="#portfolio" class="nav-link" data-tab="portfolio">Culinary Portfolio</a></li>
+          <li><a href="#journey" class="nav-link" data-tab="journey">Culinary Journey</a></li>
+          <li><a href="#resources" class="nav-link" data-tab="resources">Resource Notes</a></li>
+          <li><a href="#service" class="nav-link" data-tab="service">Service & Impact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       MAIN PAGE ROUTING CONTAINER
+       ======================================================================= -->
+  <main>
+    
+    <!-- -------------------------------------------------------------------
+         TAB 1: HOME & STORY SECTION
+         ------------------------------------------------------------------- -->
+    <div id="tab-home" class="tab-content active">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 id="hero-title">
+              <span>Personal Project Portfolio</span>
+              From Recipe<br>to Resource
+            </h1>
+            <p id="hero-tagline">
+              How molecular structure, agricultural supply chains, and systems engineering transform culinary ingredients into global sustainable resources.
+            </p>
+            <div class="hero-badges">
+              <span class="badge">Systems Engineering</span>
+              <span class="badge terracotta">Culinary Arts</span>
+              <span class="badge">Environmental Science</span>
+            </div>
+            <div>
+              <button class="btn-primary" id="btn-explore-portfolio">
+                Explore Portfolio <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="hero-graphic">
+            <div class="graphic-core">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Circular<br>Systems</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brand Timeline / Narrative Section -->
+      <section id="narrative" class="container">
+        <div class="section-header">
+          <h2>My Growth Story</h2>
+          <p>Tracing my path from basic kitchen experiments to advanced environmental and resource systems engineering.</p>
+        </div>
+        
+        <!-- Interactive Vertical Timeline -->
+        <div class="story-timeline" id="timeline-container">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </section>
+    </div>
+
+    <!-- -------------------------------------------------------------------
+         TAB 2: CULINARY PORTFOLIO SECTION
+         ------------------------------------------------------------------- -->
+    <div id="tab-portfolio" class="tab-content">
+      <section class="container">
+        <div class="section-header">
+          <h2>Culinary Portfolio</h2>
+          <p>Investigating the direct physical and chemical impacts of ingredient quality, temperature, and structural manipulation on food excellence.</p>
+        </div>
+        
+        <!-- Dynamic Filter Controls -->
+        <div class="portfolio-filters" id="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Dishes</button>
+          <button class="filter-btn" data-filter="Baking & Starch Systems">Baking & Starch Systems</button>
+          <button class="filter-btn" data-filter="Proteins">Proteins</button>
+          <button class="filter-btn" data-filter="Plant Systems">Plant Systems</button>
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </section>
+    </div>
+
+    <!-- -------------------------------------------------------------------
+         TAB 3: RECIPE TO RESOURCE NOTES SECTION
+         ------------------------------------------------------------------- -->
+    <div id="tab-resources" class="tab-content">
+      <section class="container">
+        <div class="section-header">
+          <h2>Recipe to Resource Notes</h2>
+          <p>Extending culinary details into global supply chains. Mapping food components to geographic origin, carbon footprints, and circular economy opportunities.</p>
+        </div>
+
+        <!-- Resource Notes Grid -->
+        <div class="resource-grid" id="resource-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </section>
+    </div>
+
+    <!-- -------------------------------------------------------------------
+         TAB 4: CULINARY JOURNEY (VIDEOS) SECTION
+         ------------------------------------------------------------------- -->
+    <div id="tab-journey" class="tab-content">
+      <section class="container">
+        <div class="section-header">
+          <h2>Culinary Journey</h2>
+          <p>Behind-the-scenes processes capturing mechanical techniques, thermal preparation, and ingredient behavior in real time.</p>
+        </div>
+
+        <!-- Journey Media Grid -->
+        <div class="journey-grid" id="journey-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </section>
+    </div>
+
+    <!-- -------------------------------------------------------------------
+         TAB 5: SERVICE & IMPACT SECTION
+         ------------------------------------------------------------------- -->
+    <div id="tab-service" class="tab-content">
+      <section class="container">
+        <div class="section-header">
+          <h2 id="service-title">Summer Community Service & Relief Work</h2>
+          <p id="service-description">Every summer break, I dedicate my time to volunteering at my grandfather's farm in the rural region and my grandmother's local church. These hands-on experiences have taught me the physical reality of agricultural systems, the vulnerability of food production to natural disasters, and the power of food in building and healing communities.</p>
+        </div>
+
+        <!-- Service Themes Grid -->
+        <div class="service-grid" id="service-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Overlay for Service & Impact Gallery -->
+  <div class="lightbox-overlay" id="lightbox-modal">
+    <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close image view">&times;</button>
+    <img src="" alt="Enlarged activity view" class="lightbox-img" id="lightbox-img">
+  </div>
+
+  <!-- =======================================================================
+       PORTFOLIO DETAIL MODAL SYSTEM
+       ======================================================================= -->
+  <div class="modal-overlay" id="detail-modal">
+    <div class="modal-container glass-panel">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <!-- Dynamic Modal Content Area -->
+      <img src="" alt="" class="modal-hero-img" id="modal-img">
+      
+      <div class="modal-body">
+        <span class="badge" id="modal-badge-cat">Category</span>
+        <h2 id="modal-title">Dish Name</h2>
+        <p id="modal-summary" style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+          Short summary of findings.
+        </p>
+        
+        <div class="modal-section-grid">
+          
+          <!-- Left Column (Ingredients & Selection) -->
+          <div class="modal-left">
+            <div class="modal-section">
+              <h3><i class="fa-solid fa-list-check"></i> Ingredient Composition</h3>
+              <ul class="ingredients-list" id="modal-ingredients">
+                <!-- Dynamically populated -->
+              </ul>
+            </div>
+            
+            <div class="modal-section">
+              <h3><i class="fa-solid fa-circle-question"></i> Reason for Selection</h3>
+              <p id="modal-selection-reason">Reason content here...</p>
+            </div>
+            
+            <div class="modal-section">
+              <h3><i class="fa-solid fa-leaf"></i> Freshness & Sourcing</h3>
+              <p id="modal-freshness">Freshness content here...</p>
+            </div>
+          </div>
+          
+          <!-- Right Column (Process & Insights) -->
+          <div class="modal-right">
+            <div class="modal-section">
+              <h3><i class="fa-solid fa-gears"></i> Cooking / Engineering Process</h3>
+              <p id="modal-cooking-method">Cooking method here...</p>
+            </div>
+            
+            <div class="modal-section">
+              <h3><i class="fa-solid fa-lightbulb"></i> Key Insights & Lessons Learned</h3>
+              <p id="modal-lessons-learned" style="background: rgba(209, 122, 88, 0.05); padding: 1rem; border-left: 3px solid var(--accent-terracotta); border-radius: 4px;">
+                Insight details...
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       FOOTER
+       ======================================================================= -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-title" id="footer-brand-title">From Recipe to Resource</div>
+        <p>© 2026. Culinary & Systems Engineering Portfolio.</p>
+      </div>
+      <div class="footer-right">
+        <a href="" class="email-link" id="footer-email"><i class="fa-solid fa-envelope"></i> contact@domain.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       SCRIPTS LOADING
+       ======================================================================= -->
+  <script src="data.js?v=4.8"></script>
+  <script src="app.js?v=4.8"></script>
+</body>
+</html>
+<!-- deploy trigger v4.8.0 -->

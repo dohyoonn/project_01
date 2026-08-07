@@ -1,0 +1,2 @@
+# Tell GitHub Pages to bypass Jekyll processing
+# (Jekyll 분석 엔진을 우회하여 정적 파일을 바로 서빙하도록 설정합니다)
