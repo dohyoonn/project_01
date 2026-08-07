@@ -398,8 +398,9 @@ function setupThemeToggle() {
 
   const icon = themeToggle.querySelector("i");
 
-  // Load saved theme or default to dark
-  const currentTheme = localStorage.getItem("theme") || "dark";
+  // Always default to dark theme on page load to ensure the premium dark aesthetic is the first impression
+  const currentTheme = "dark";
+  localStorage.setItem("theme", "dark");
   document.documentElement.setAttribute("data-theme", currentTheme);
   updateThemeIcon(currentTheme);
 
